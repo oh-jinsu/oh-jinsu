@@ -1,6 +1,8 @@
 <header>
   <div class="inner">
-    <h1>ohjinsu.me</h1>
+    <a href="/">
+      <h1>ohjinsu.me</h1>
+    </a>
   </div>
 </header>
 
