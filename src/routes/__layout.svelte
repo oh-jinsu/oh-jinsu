@@ -1,23 +1,12 @@
 <script lang="ts">
 	import Footer from '$lib/components/footer.svelte';
 	import Header from '$lib/components/Header.svelte';
+	import Main from '$lib/components/main.svelte';
 	import '../app.css';
 </script>
 
 <Header />
-<main>
+<Main>
 	<slot />
-</main>
+</Main>
 <Footer />
-
-<style>
-	main {
-		flex: 1;
-
-		max-width: 768px;
-		
-		width: 100%;
-
-		padding: 16px;
-	}
-</style>
