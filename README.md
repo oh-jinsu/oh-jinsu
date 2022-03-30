@@ -1,3 +1,17 @@
-# Blog
+---
+layout: article
+---
 
-Powered by sveltekit.
+## 안녕하세요 👋.
+
+베이컨주의자이자, 소프트웨어 엔지니어입니다.
+
+지난 1년 사이 4개의 팀 프로젝트에서 프론트엔드를 주도적으로 개발하여 3종류의 환경에 배포했습니다. 접근성이 가장 우수한 웹, 안드로이드, 그리고 iOS입니다.
+
+<br />
+
+🚶 걷기를 좋아합니다. [산책 일지](https://ohjinsu.me/walking-logs)를 확인해 보세요.
+
+🧑‍💻 엔터프라이즈의 성공과 직결되는 실용적인 프로그래밍에 대해 고민합니다. [애자일 소프트웨어  개발](https://ohjinsu.me/agile-software)을 확인해 보세요.
+
+📫 언제든지 연락하세요. ohjinsu@codersproduct.com
