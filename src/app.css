@@ -60,6 +60,10 @@ img {
 	max-width: 100%;
 }
 
+address {
+  font-style: normal;
+}
+
 code[class*="language-"],
   pre[class*="language-"] {
     color: #ccc;
