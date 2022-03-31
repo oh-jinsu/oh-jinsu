@@ -1,9 +1,9 @@
 <header>
-  <div class="inner">
+  <h1>
     <a href="/">
-      <h1>ohjinsu.me</h1>
+      ohjinsu.me
     </a>
-  </div>
+  </h1>
 </header>
 
 <style>
@@ -17,17 +17,17 @@
     border-bottom: 1px solid var(--tertiary-color);
   }
 
-  h1 {
-    font-size: 1rem;
-
-    font-weight: normal;
-  }
-
-  .inner {
+  header>* {
     max-width: var(--screen-width);
 		
 		width: 100%;
 
     padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 1rem;
+
+    font-weight: normal;
   }
 </style>
