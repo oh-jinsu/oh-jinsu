@@ -1,5 +1,6 @@
 <script>
   import Meta from "$lib/components/meta.svelte"
+  import { formatDate } from "$lib/utils/date";
 
   export let title
 
@@ -7,39 +8,61 @@
 
   export let date
 
-  const dateInstance = new Date(date)
+  export let keywords
 
-  const year = dateInstance.getFullYear()
-
-  const month = dateInstance.getMonth() + 1
-
-  const day = dateInstance.getDay()
-
-  const dateFormatted = `${year}년 ${month}월 ${day}일 수정`
+  const dateFormatted = `${formatDate(new Date(date), "수정")}`
 </script>
 
 <Meta title={title} description={description}/>
 
 <header>
-{#if title}
-  <h1>{title}</h1>
-{/if}
+  {#if title}
+    <h1>{title}</h1>
+  {/if}
 
-{#if description}
-  <h2>{description}</h2>
-{/if}
+  {#if description}
+    <h2>{description}</h2>
+  {/if}
 
-{#if date}
-  <time datetime={date}>{ dateFormatted }</time>
-{/if}
+  {#if date}
+    <time datetime={date}>{ dateFormatted }</time>
+  {/if}
 </header>
 
 <article>
   <slot />
 </article>
 
+<footer>
+  {#if keywords?.length > 0}
+    <ul>
+      {#each keywords as keyword}
+        <li>
+          <a href="/article?keyword={keyword}">
+            { keyword }
+          </a>
+        </li>
+      {/each}
+    </ul>
+  {/if}
+</footer>
+
 <style>
   article {
     overflow-x: hidden;
+  }
+
+  ul {
+    display: flex;
+
+    list-style: none;
+
+    padding: 0;
+
+    gap: 8px;
+  }
+
+  ul>li>a::before {
+    content: "#";
   }
 </style>
