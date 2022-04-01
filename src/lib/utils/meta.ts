@@ -13,7 +13,7 @@ export const getStructedData = ({
   "author": {
     "@type": "Person",
     "name": "오진수",
-    "url:" "https://ohjinsu.me/",
+    "url:": "https://ohjinsu.me/",
   },
   "articleSection": "${section}",
   "dateCreated": "${date}",
