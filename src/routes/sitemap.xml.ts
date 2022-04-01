@@ -1,6 +1,6 @@
 export async function get() {
   const [walkingLogs, agileSoftwares] = await Promise.all([
-    fetch("http://localhost:3000/walking-logs/json").then((res) => res.json()),
+    fetch("https://ohjinsu.me/walking-logs/json").then((res) => res.json()),
     fetch("https://ohjinsu.me/agile-software/json").then((res) => res.json()),
   ])
 
