@@ -18,4 +18,4 @@
   export let articles
 </script>
 
-<List title="애자일 소프트웨어" articles={articles} />
+<List title="애자일 소프트웨어 개발" articles={articles} />
