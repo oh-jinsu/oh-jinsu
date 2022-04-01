@@ -1,20 +1,26 @@
 <header>
-  <h1>
-    <a href="/">
-      ohjinsu.me
-    </a>
-  </h1>
+  <a href="/">
+    ohjinsu.me
+  </a>
 </header>
 
 <style>
   header {
+    position: fixed;
+
     display: flex;
     
     justify-content: center;
+
+    align-items: center;
     
     width: 100%;
 
+    height: 40px;
+
     border-bottom: 1px solid var(--tertiary-color);
+
+    background-color: var(--background-color);
   }
 
   header>* {
@@ -22,12 +28,6 @@
 		
 		width: 100%;
 
-    padding: 0 16px;
-  }
-
-  h1 {
-    font-size: 1rem;
-
-    font-weight: normal;
+    padding: 0px 16px;
   }
 </style>

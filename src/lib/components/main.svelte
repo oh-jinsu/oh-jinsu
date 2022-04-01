@@ -10,6 +10,6 @@
 		
 		width: 100%;
 
-		padding: 16px;
+		padding: 56px 16px 16px 16px;
 	}
 </style>
