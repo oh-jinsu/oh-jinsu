@@ -8,12 +8,14 @@
 
   export let date
 
+  export let section
+
   export let keywords
 
   const dateFormatted = `${formatDate(new Date(date), "수정")}`
 </script>
 
-<Meta title={title} description={description}/>
+<Meta title={title} description={description} date={date} section={section} keywords={keywords}/>
 
 <header>
   {#if title}
