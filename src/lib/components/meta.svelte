@@ -1,5 +1,5 @@
 <script>
-  import { getStructedData } from "../utils/meta.ts"
+  import { getStructedData } from "../utils/meta"
 
   export let title
 
