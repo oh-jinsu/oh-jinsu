@@ -10,22 +10,20 @@
 
 <Meta title={title} description="" />
 
-<h1>{ title }</h1>
+<h3>{ title }</h3>
 {#if articles.length > 0}
   <ol>
     {#each articles as { title, description, date, keywords, href }}
       <li>
         {#if title}
-          <h2>
-            <a href="{href}">
-              { title }
-            </a>
-          </h2>
+          <a href="{href}">
+            { title }
+          </a>
         {/if}
         {#if description}
-          <h3>
+          <p>
             { description }
-          </h3>
+          </p>
         {/if}
         <footer>
           {#if date}
@@ -64,8 +62,6 @@
 
     flex-direction: column-reverse;
 
-    list-style: none;
-
     padding: 0;
 
     gap: 24px;
@@ -79,15 +75,6 @@
     padding: 0;
 
     gap: 8px;
-  }
-
-  h2, h3 {
-    margin: 0;
-    padding: 0;
-
-    line-height: 1.7;
-
-    font-weight: normal;
   }
 
   ul>li>a::before {

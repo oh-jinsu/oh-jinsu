@@ -8,9 +8,11 @@ export const get = async({ url }) => {
   const walkingLogFiles = import.meta.glob("../walking-logs/*.md")
 
   const [agileSoftwares, walkinglogs] = await Promise.all([
-    extractArticles("agile-software", agileSoftwareFiles),
-    extractArticles("walking-logs", walkingLogFiles),
+    extractArticles("", agileSoftwareFiles),
+    extractArticles("", walkingLogFiles),
   ])
+
+  console.log(agileSoftwares)
 
   const result = [...agileSoftwares, ...walkinglogs].filter((article) =>{
     return article.keywords?.includes(keyword)
