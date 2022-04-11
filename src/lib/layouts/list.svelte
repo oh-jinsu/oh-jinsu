@@ -62,8 +62,6 @@
 
     flex-direction: column-reverse;
 
-    padding: 0;
-
     gap: 24px;
   }
 
