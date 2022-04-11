@@ -5,7 +5,7 @@ export const formatDate = (date: Date, suffix?: string) : string => {
 
   const month = dateInstance.getMonth() + 1
 
-  const day = dateInstance.getDay()
+  const day = dateInstance.getDate()
 
   const result = `${year}년 ${month}월 ${day}일`
 
