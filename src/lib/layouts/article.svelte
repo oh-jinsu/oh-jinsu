@@ -23,7 +23,7 @@
   {/if}
 
   {#if description}
-    <h2>{description}</h2>
+    <p>{description}</p>
   {/if}
 
   {#if date}
@@ -52,6 +52,12 @@
 <style>
   article {
     overflow-x: hidden;
+  }
+
+  header>p {
+    font-size: 1.25rem;
+
+    font-style: italic;
   }
 
   ul {
