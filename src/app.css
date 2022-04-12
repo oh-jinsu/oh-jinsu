@@ -48,6 +48,11 @@ a:hover {
 	text-decoration: underline;
 }
 
+ol, ul {
+  padding: 0;
+  list-style-position: inside;
+}
+
 input,
 button {
 	font-size: inherit;

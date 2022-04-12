@@ -15,16 +15,9 @@
   <ol>
     {#each articles as { title, description, date, keywords, href }}
       <li>
-        {#if title}
-          <a href="{href}">
-            { title }
-          </a>
-        {/if}
-        {#if description}
-          <p>
-            { description }
-          </p>
-        {/if}
+        <a href="{href}">
+          { `${title}${description ? ` — ${description}` : ""}` }
+        </a>
         <footer>
           {#if date}
           <time datetime={date}>
