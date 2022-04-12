@@ -12,8 +12,6 @@ export const get = async({ url }) => {
     extractArticles("", walkingLogFiles),
   ])
 
-  console.log(agileSoftwares)
-
   const result = [...agileSoftwares, ...walkinglogs].filter((article) =>{
     return article.keywords?.includes(keyword)
   })
