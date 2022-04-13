@@ -112,6 +112,7 @@ code[class*="language-"],
     font-size: .8rem;
     border-radius: .3em;
     background: #f6f6f7;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     white-space: normal;
   }
   .token.comment,
