@@ -8,4 +8,4 @@
 
 🚶 걷기를 좋아합니다. [산책 일지](https://ohjinsu.me/walking-logs)를 확인해 보세요.
 
-🧑‍💻 엔터프라이즈의 성공과 직결되는 실용적인 프로그래밍에 대해 고민합니다. [애자일 소프트웨어  개발](https://ohjinsu.me/agile-software)을 확인해 보세요.
+🧑‍💻 비즈니스의 성공을 주도하는 실용적인 프로그래밍에 대해 고민합니다. [애자일 소프트웨어  개발](https://ohjinsu.me/agile-software)을 확인해 보세요.
