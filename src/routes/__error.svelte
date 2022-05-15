@@ -10,8 +10,6 @@
 </script>
 
 <script>
-  export let error
-
   export let status
 
   const message = status === 404 ? "페이지를 찾지 못했습니다." : "알 수 없는 오류입니다."
