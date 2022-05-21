@@ -1,6 +1,6 @@
 <header>
   <a href="/">
-    ohjinsu.me
+    오진수의 블로그
   </a>
 </header>
 

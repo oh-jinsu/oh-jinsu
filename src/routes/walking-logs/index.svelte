@@ -18,4 +18,4 @@
   export let articles
 </script>
 
-<List title="산책 일지" articles={articles} />
+<List title="산책 일지" articles={articles} description="산책일지를 수록합니다." />

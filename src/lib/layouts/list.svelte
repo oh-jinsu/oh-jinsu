@@ -5,10 +5,12 @@
 
   export let title
 
+  export let description
+
   export let articles
 </script>
 
-<Meta title={title} description="" />
+<Meta title={title} description={description} />
 
 <h3>{ title }</h3>
 {#if articles.length > 0}
