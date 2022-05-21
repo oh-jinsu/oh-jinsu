@@ -11,6 +11,9 @@
       <a class="portfolio" href="https://github.com/oh-jinsu" target="_blank">
         https://github.com/oh-jinsu
       </a>
+      <a class="office" href="https://codersproduct.com" target="_blank">
+        https://codersproduct.com
+      </a>
     </address>
 </footer>
 
@@ -53,5 +56,9 @@
 
   .portfolio::before {
     content: "💼 ";
+  }
+
+  .office::before {
+    content: "🏢 ";
   }
 </style>
