@@ -23,4 +23,4 @@
   export let articles
 </script>
 
-<List title="#{keyword}" articles={articles} />
+<List title="#{keyword}" articles={articles} description="{keyword}에 대한 내용을 수록합니다." />
