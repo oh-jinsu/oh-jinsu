@@ -18,7 +18,7 @@
     {#each articles as { title, description, date, keywords, href }}
       <li>
         <a href="{href}">
-          { `${title}${description ? ` — ${description}` : ""}` }
+          { `${title}${description ? `—${description}` : ""}` }
         </a>
         <footer>
           {#if date}
@@ -26,7 +26,7 @@
             { formatDate(new Date(date), "수정") }
           </time>
         {/if}
-        {#if keywords?.length > 0}
+        <!-- {#if keywords?.length > 0}
           <ul>
             {#each keywords as keyword}
               <li>
@@ -37,7 +37,7 @@
             {/each}
           </ul>
         {/if}
-        </footer>
+        </footer> -->
       </li>
     {/each}
   </ol>
