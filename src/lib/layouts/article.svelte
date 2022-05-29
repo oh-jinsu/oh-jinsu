@@ -8,31 +8,31 @@
 
   export let date
 
-  export let keywords
+  // export let keywords
 
   const dateFormatted = `${formatDate(new Date(date), "수정")}`
 </script>
 
 <Meta title={`${title}${description ? `—${description}` : ""}`} description={description} />
 
-<header>
-  {#if title}
-    <h1>{title}</h1>
-  {/if}
+<!-- <header> -->
+{#if title}
+  <h1>{title}</h1>
+{/if}
 
-  {#if description}
-    <p>{description}</p>
-  {/if}
+{#if description}
+  <p class="description">{description}</p>
+{/if}
 
-  {#if date}
-    <time datetime={date}>{ dateFormatted }</time>
-  {/if}
-</header>
+{#if date}
+  <time datetime={date}>{ dateFormatted }</time>
+{/if}
+<!-- </header> -->
 
 <article>
   <slot />
 </article>
-
+<!-- 
 <footer>
   {#if keywords?.length > 0}
     <ul>
@@ -45,20 +45,20 @@
       {/each}
     </ul>
   {/if}
-</footer>
+</footer> -->
 
 <style>
   article {
     overflow-x: hidden;
   }
 
-  header>p {
+  .description {
     font-size: 1.25rem;
 
     font-style: italic;
   }
 
-  ul {
+  /* ul {
     display: flex;
 
     list-style: none;
@@ -70,5 +70,5 @@
 
   ul>li>a::before {
     content: "#";
-  }
+  } */
 </style>

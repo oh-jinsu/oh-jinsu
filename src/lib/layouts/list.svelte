@@ -60,7 +60,7 @@
     gap: 24px;
   }
 
-  ul {
+  /* ul {
     list-style-type: none;
 
     display: flex;
@@ -72,5 +72,5 @@
 
   ul>li>a::before {
     content: "#";
-  }
+  } */
 </style>
