@@ -13,7 +13,7 @@
   const dateFormatted = `${formatDate(new Date(date), "수정")}`
 </script>
 
-<Meta title={`$title${description ? `—${description}` : ""}`} description={description} />
+<Meta title={`${title}${description ? `—${description}` : ""}`} description={description} />
 
 <header>
   {#if title}
