@@ -23,6 +23,12 @@ export async function get() {
       <url>
         <loc>https://ohjinsu.me</loc>
       </url>
+      <url>
+        <loc>https://ohjinsu.me/walking-logs</loc>
+      </url>
+      <url>
+        <loc>https://ohjinsu.me/agile-software</loc>
+      </url>
       ${articles.map(({href, date}) => `
         <url>
           <loc>https://ohjinsu.me/${href}</loc>
