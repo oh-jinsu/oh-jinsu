@@ -1,4 +1,6 @@
 <script context="module">
+  export const prerender = false;
+
   export const load = async ({ fetch, url }) => {
     const keyword = url.searchParams.get("keyword")
 
