@@ -18,7 +18,7 @@
     {#each articles as { title, description, date, keywords, href }}
       <li>
         <a href="{href}">
-          { `${title}${description ? `—${description}` : ""}` }
+          { `${title}${description ? `: ${description}` : ""}` }
         </a>
         <footer>
           {#if date}

@@ -13,15 +13,11 @@
   const dateFormatted = `${formatDate(new Date(date), "수정")}`
 </script>
 
-<Meta title={`${title ? `${title}`: ``}${description ? `—${description}` : ""}`} description={description} />
+<Meta title={`${title ? `${title}`: ``}${description ? `: ${description}` : ""}`} description={description} />
 
 <!-- <header> -->
 {#if title}
-  <h1>{title}</h1>
-{/if}
-
-{#if description}
-  <p class="description">{description}</p>
+  <h1>{`${title}${description ? `: ${description}` : ''}`}</h1>
 {/if}
 
 {#if date}
@@ -52,23 +48,11 @@
     overflow-x: hidden;
   }
 
-  .description {
-    font-size: 1.25rem;
-
-    font-style: italic;
+  h1 {
+    font-size: 3rem;
   }
 
-  /* ul {
-    display: flex;
-
-    list-style: none;
-
-    padding: 0;
-
-    gap: 8px;
+  article {
+    margin-top: 16px;
   }
-
-  ul>li>a::before {
-    content: "#";
-  } */
 </style>
