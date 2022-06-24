@@ -4,7 +4,6 @@ export const extractArticles = async (category: string, files: object) => {
   const articles = await Promise.all(
     iterable.map(async ([path, resolver]) => {
       const { metadata } = await resolver()
-
       const href = `${category}${path.slice(1, -3)}`
       
       return {

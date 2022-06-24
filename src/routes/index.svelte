@@ -1,9 +1,33 @@
+<script context="module">
+  export const prerender = false;
+
+  export const load = async ({ fetch, url }) => {
+    const res = await fetch(`/posts/json`)
+
+    const posts = await res.json()
+
+    return {
+      props: {
+        posts,
+      }
+    }
+  }
+</script>
+
 <script>
   // @ts-nocheck
   import Readme from "../../README.md"
-  import Article from "$lib/layouts/article.svelte";
+  import Portfolio from "$lib/components/portfolio.svelte";
+
+  export let posts
 </script>
 
-<Article>
-  <Readme />
-</Article>
+<Readme />
+<div class="space" />
+<Portfolio posts={posts} />
+
+<style>
+  .space {
+    height: 1px;
+  }
+</style>

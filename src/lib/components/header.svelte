@@ -1,6 +1,6 @@
 <header>
   <a href="/">
-    오진수의 블로그
+    오진수
   </a>
 </header>
 
