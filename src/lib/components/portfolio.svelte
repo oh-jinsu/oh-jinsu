@@ -151,7 +151,10 @@
 <ol>
   {#each items as { type, ...item }}
   <li>
-    <time>{formatDate(item.date)}</time>
+    <div class="time-container">
+      <time>{formatDate(item.date)}</time>
+      <div class="line" />
+    </div>
     <div class="body {type}">
       {#if type === "app"}
         <img class="icon" src={item.icon} alt="app-icon" />
@@ -182,14 +185,12 @@
 <style>
   ol {
     list-style: none;
+
+    margin-bottom: 0px;
   }
 
   li {
     display: flex;
-  }
-
-  li + li {
-    margin-top: 16px;
   }
 
   h3 {
@@ -209,11 +210,13 @@
     border-radius: 12px;
     border: 1px solid rgb(238, 238, 238);
 
-    margin-right: 16px;
+    margin-right: 12px;
   }
 
   .body {
     flex: 1;
+
+    padding-bottom: 24px;
   }
 
   .body.app {
@@ -224,11 +227,27 @@
     content: " · ";
   }
 
-  time {
+  .time-container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     margin-right: 16px;
+  }
 
-    line-height: 1.25;
+  time {
+    position: relative;
 
-    font-size: 14px;
+    font-size: 12px;
+
+    z-index: 1;
+  }
+
+  .line {
+    width: 1px;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
   }
 </style> 
