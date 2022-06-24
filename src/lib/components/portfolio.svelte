@@ -140,7 +140,7 @@
   const formatDate = (dateString) => {
     const date = new Date(dateString)
 
-    const year = date.getFullYear()
+    const year = date.getFullYear().toString().substring(2)
     const month = date.getMonth() + 1
     const day = date.getDate()
 
@@ -228,5 +228,7 @@
     margin-right: 16px;
 
     line-height: 1.25;
+
+    font-size: 14px;
   }
 </style> 
