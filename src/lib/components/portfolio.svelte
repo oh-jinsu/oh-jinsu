@@ -243,11 +243,13 @@
     font-size: 12px;
 
     z-index: 1;
+
+    color: var(--secondary-color)
   }
 
   .line {
     width: 1px;
     height: 100%;
-    background-color: rgb(238, 238, 238);
+    background-color: rgba(171, 171, 232, .3);
   }
 </style> 
