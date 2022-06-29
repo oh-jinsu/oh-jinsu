@@ -1,76 +1,58 @@
 <script>
-  import Meta from "$lib/components/meta.svelte";
+	import Header from '$lib/components/header.svelte';
+	import Main from '$lib/components/main.svelte';
 
-  import { formatDate } from "$lib/utils/date";
+	import Meta from '$lib/components/meta.svelte';
 
-  export let title
+	import { formatDate } from '$lib/utils/date';
 
-  export let description
+	export let title;
 
-  export let articles
+	export let description;
+
+	export let articles;
 </script>
 
-<Meta title={title} description={description} />
+<Meta {title} {description} />
 
-<h3>{ title }</h3>
-{#if articles.length > 0}
-  <ol>
-    {#each articles as { title, description, date, keywords, href }}
-      <li>
-        <a href="{href}">
-          { `${title}${description ? `: ${description}` : ""}` }
-        </a>
-        <footer>
-          {#if date}
-          <time datetime={date}>
-            { formatDate(new Date(date), "수정") }
-          </time>
-        {/if}
-        <!-- {#if keywords?.length > 0}
-          <ul>
-            {#each keywords as keyword}
-              <li>
-                <a href="/article?keyword={keyword}">
-                  { keyword }
-                </a>
-              </li>
-            {/each}
-          </ul>
-        {/if}
-        </footer> -->
-      </li>
-    {/each}
-  </ol>
-{:else}
-  <p>결과가 없습니다.</p>
-{/if}
+<Header>
+	<nav>
+		<a href="/">오진수</a>
+		> {title}
+	</nav>
+</Header>
+<Main>
+	<h1>{title}</h1>
+	{#if articles.length > 0}
+		<ol>
+			{#each articles as { title, date, href }}
+				<li>
+					<a {href}>
+						{title}
+					</a>
+					{#if date}
+						<time datetime={date}>
+							{formatDate(new Date(date), '작성')}
+						</time>
+					{/if}
+				</li>
+			{/each}
+		</ol>
+	{:else}
+		<p>결과가 없습니다.</p>
+	{/if}
+</Main>
 
 <style>
-  footer {
-    display: flex;
+	time {
+		display: block;
+	}
 
-    gap: 8px;
-  }
+	ol {
+		display: flex;
 
-  ol {
-    display: flex;
+		flex-direction: column-reverse;
 
-    flex-direction: column-reverse;
-
-    gap: 24px;
-  }
-
-  /* ul {
-    list-style-type: none;
-
-    display: flex;
-
-    padding: 0;
-
-    gap: 8px;
-  }
-
-  ul>li>a::before {
-    content: "#";
-  } */
+		gap: 8px;
+	}
 </style>

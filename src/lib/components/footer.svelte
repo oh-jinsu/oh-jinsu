@@ -3,18 +3,7 @@
 </script>
 
 <footer>
-    <p>© { year } 오진수.</p>
-    <address>
-      <a class="email" href="mailto:ohjinsu@codersproduct.com">
-        ohjinsu@codersproduct.com
-      </a>
-      <a class="portfolio" href="https://github.com/oh-jinsu" target="_blank">
-        https://github.com/oh-jinsu
-      </a>
-      <!-- <a class="office" href="https://codersproduct.com" target="_blank">
-        https://codersproduct.com
-      </a> -->
-    </address>
+  <p>© { year } 오진수.</p>
 </footer>
 
 <style>
@@ -26,10 +15,6 @@
     align-items: center;
     
     width: 100%;
-
-    border-top: 1px solid var(--tertiary-color);
-
-    padding-bottom: 16px;
   }
 
   footer>* {
@@ -38,27 +23,5 @@
 		width: 100%;
 
     padding: 0 16px;
-  }
-
-  address {
-    display: flex;
-
-    flex-direction: column;
-  }
-
-  address>* {
-    width: fit-content;
-  }
-
-  .email::before {
-    content: "📪 ";
-  }
-
-  .portfolio::before {
-    content: "💼 ";
-  }
-
-  .office::before {
-    content: "🏢 ";
   }
 </style>

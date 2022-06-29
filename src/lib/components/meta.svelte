@@ -5,7 +5,7 @@
 
   const name = title ? `${title} - 오진수` : "오진수"
 
-  const _description = description || `산책 일지와 애자일 소프트웨어 개발에 관한 내용을 수록합니다.`
+  const _description = description || `오진수의 블로그입니다.`
 </script>
 
 <svelte:head>

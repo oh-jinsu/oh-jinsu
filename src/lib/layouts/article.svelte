@@ -1,58 +1,65 @@
 <script>
-  import Meta from "$lib/components/meta.svelte"
-  import { formatDate } from "$lib/utils/date";
+	import Header from '$lib/components/header.svelte';
+	import Main from '$lib/components/main.svelte';
+	import Meta from '$lib/components/meta.svelte';
+	import { formatDate } from '$lib/utils/date';
 
-  export let title
+	export let title;
 
-  export let description
+	export let description;
 
-  export let date
+	export let date;
 
-  // export let keywords
+	export let category;
 
-  const dateFormatted = `${formatDate(new Date(date), "수정")}`
+	const categoryHref = {
+		'스타트업 여행기': '/startup-journey',
+		'애자일 소프트웨어': '/agile-software'
+	}[category];
+
+	const dateFormatted = `${formatDate(new Date(date), '작성')}`;
 </script>
 
-<Meta title={`${title ? `${title}`: ``}${description ? `: ${description}` : ""}`} description={description} />
+<Meta {title} {description} />
 
-<!-- <header> -->
-{#if title}
-  <h1>{`${title}${description ? `: ${description}` : ''}`}</h1>
-{/if}
-
-{#if date}
-  <time datetime={date}>{ dateFormatted }</time>
-{/if}
-<!-- </header> -->
-
-<article>
-  <slot />
-</article>
-<!-- 
-<footer>
-  {#if keywords?.length > 0}
-    <ul>
-      {#each keywords as keyword}
-        <li>
-          <a href="/article?keyword={keyword}">
-            { keyword }
-          </a>
-        </li>
-      {/each}
-    </ul>
-  {/if}
-</footer> -->
+<Header>
+	<nav>
+		<a href="/">오진수</a>
+		>
+		<a href={categoryHref}>{category}</a>
+		> {title}
+	</nav>
+</Header>
+<Main>
+	<article>
+		{#if title}
+			<h1>{title}</h1>
+		{/if}
+		{#if date}
+			<time datetime={date}>{dateFormatted}</time>
+		{/if}
+		<slot />
+	</article>
+</Main>
 
 <style>
-  article {
-    overflow-x: hidden;
-  }
+	article {
+    display: flex;
 
-  h1 {
-    font-size: 3rem;
-  }
+    flex-direction: column;
 
-  article {
-    margin-top: 16px;
+		overflow-x: hidden;
+	}
+
+	h1 {
+		font-size: 3rem;
+
+    align-self: center;
+	}
+
+  time {
+    align-self: center;
+
+    margin-bottom: 32px;
   }
 </style>

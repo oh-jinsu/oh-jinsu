@@ -1,7 +1,8 @@
 ---
 layout: article
-title: MVVM 아키텍처의 장단점들
-description: 더 나은 설계를 위한 문제 인식
+category: 애자일 소프트웨어
+title: MVVM 아키텍처의 장단점
+description: 지난 세 차례의 프로젝트에서 나는 MVVM 아키텍처를 구현했다. MVVM은 매력적인 아키텍처다. 다음과 같은 분명한 장점들이 있다.
 date: 2022-05-15
 keywords: [아키텍처, MVVM]
 ---
