@@ -27,27 +27,11 @@
 	<Breadcrumbs category={category} title={title} />
 </Header>
 <Main>
-	<article>
-		{#if title}
-			<h1>{title}</h1>
-		{/if}
-		{#if date}
-			<time datetime={date}>{dateFormatted}</time>
-		{/if}
-		<slot />
-	</article>
+	{#if title}
+		<h1>{title}</h1>
+	{/if}
+	{#if date}
+		<time datetime={date}>{dateFormatted}</time>
+	{/if}
+	<slot />
 </Main>
-
-<style>
-	article {
-    display: flex;
-
-    flex-direction: column;
-
-		overflow-x: hidden;
-	}
-
-	h1 {
-		font-size: 2.5rem;
-	}
-</style>
