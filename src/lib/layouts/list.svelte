@@ -23,7 +23,6 @@
 	<Breadcrumbs category={title} title="" />
 </Header>
 <Main>
-	<h1>{title}</h1>
 	{#if articles.length > 0}
 		<ol>
 			{#each articles as { title, date, href }}

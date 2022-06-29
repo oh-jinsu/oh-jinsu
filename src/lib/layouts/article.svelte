@@ -48,12 +48,6 @@
 	}
 
 	h1 {
-		font-size: 3rem;
-
-    align-self: center;
+		font-size: 2.5rem;
 	}
-
-  time {
-    align-self: center;
-  }
 </style>
