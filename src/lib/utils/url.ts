@@ -1,0 +1,1 @@
+export const toUrl = (value: string) => value.replace(" ", "-")

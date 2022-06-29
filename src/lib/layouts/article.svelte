@@ -3,6 +3,7 @@
 	import Header from '$lib/components/header.svelte';
 	import Main from '$lib/components/main.svelte';
 	import Meta from '$lib/components/meta.svelte';
+import { ORIGIN } from '$lib/constants';
 	import { formatDate } from '$lib/utils/date';
 
 	export let title;
@@ -14,9 +15,11 @@
 	export let category;
 
 	const dateFormatted = `${formatDate(new Date(date), '작성')}`;
+
+	const canonical=`${ORIGIN}/${category.replace(" ", "-")}/${title.replace(" ", "-")}`
 </script>
 
-<Meta {title} {description} />
+<Meta {title} {description} {canonical}  />
 
 <Header>
 	<Breadcrumbs category={category} title={title} />
@@ -50,7 +53,5 @@
 
   time {
     align-self: center;
-
-    margin-bottom: 32px;
   }
 </style>

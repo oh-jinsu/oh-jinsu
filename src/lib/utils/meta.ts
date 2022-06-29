@@ -1,7 +1,9 @@
+import { AUTHOR, ORIGIN } from "$lib/constants"
+
 export const getStructedData = ({
-  name, title, description, date, section, keywords,
+  name, title, description, date, category, keywords,
 } : {
-  name: string, title: string, description: string, date: Date, section: string, keywords : string[],
+  name: string, title: string, description: string, date: Date, category: string, keywords : string[],
 }) : string => {
   return `<script type="application/ld+json">{
   "@context": "http://schema.org/",
@@ -12,14 +14,14 @@ export const getStructedData = ({
   "keywords": "${keywords}",
   "author": {
     "@type": "Person",
-    "name": "오진수",
-    "url": "https://ohjinsu.me/"
+    "name": ${AUTHOR},
+    "url": ${ORIGIN}
   },
-  "articleSection": "${section}",
+  "articleSection": "${category}",
   "dateCreated": "${date}",
   "datePublished": "${date}",
   "dateModified": "${date}",
   "inLanguage": "ko-KR",
-  "homepage": "https://ohjinsu.me/"
+  "homepage": ${ORIGIN}
 }</script>`
 }

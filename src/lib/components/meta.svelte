@@ -1,20 +1,28 @@
 <script>
+import { DESCRIPTION, TITLE } from "$lib/constants";
+
+
   export let title
 
   export let description
 
-  const name = title ? `${title} - 오진수` : "오진수"
+  export let canonical
 
-  const _description = description || `오진수의 블로그입니다.`
+  const metaTitle = title ? `${title} - ${TITLE}` : TITLE
+
+  const metaDescription = description || DESCRIPTION
+
+  
 </script>
 
 <svelte:head>
-  <title>{ name }</title>
-  <meta name="description" content={_description} />
+  <title>{ metaTitle }</title>
+  <meta name="description" content={metaDescription} />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content={name} />
-  <meta property="og:description" content={_description} />
+  <meta property="og:title" content={metaTitle} />
+  <meta property="og:description" content={metaDescription} />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content={name} />
-  <meta name="twitter:description" content={_description} />
+  <meta name="twitter:title" content={metaTitle} />
+  <meta name="twitter:description" content={metaDescription} />
+  <link rel="canonical" href={canonical} />
 </svelte:head>

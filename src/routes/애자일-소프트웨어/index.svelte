@@ -1,9 +1,12 @@
 <script context="module">
+import { AGILE_SOFTWARE, AGILE_SOFTWARE_DESCRIPTION } from "$lib/constants";
+
 import List from "$lib/layouts/list.svelte";
+import { toUrl } from "$lib/utils/url";
 
   export const prerender = false;
   export const load = async ({ fetch }) => {
-    const res = await fetch("/agile-software/json")
+    const res = await fetch(`/${toUrl(AGILE_SOFTWARE)}/json`)
     const articles = await res.json()
     return {
       props: {
@@ -17,4 +20,4 @@ import List from "$lib/layouts/list.svelte";
   export let articles
 </script>
 
-<List title="애자일 소프트웨어" description="비즈니스의 성공을 주도하는 프로그래밍에 관해 생각해요." articles={articles} />
+<List title={AGILE_SOFTWARE} description={AGILE_SOFTWARE_DESCRIPTION} articles={articles} />

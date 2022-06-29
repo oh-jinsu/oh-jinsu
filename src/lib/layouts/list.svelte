@@ -4,6 +4,7 @@
 	import Main from '$lib/components/main.svelte';
 
 	import Meta from '$lib/components/meta.svelte';
+  import { ORIGIN } from '$lib/constants';
 
 	import { formatDate } from '$lib/utils/date';
 
@@ -12,9 +13,11 @@
 	export let description;
 
 	export let articles;
+
+  const canonical = `${ORIGIN}/${title.replace(" ", "-")}`
 </script>
 
-<Meta {title} {description} />
+<Meta {title} {description} {canonical}/>
 
 <Header>
 	<Breadcrumbs category={title} title="" />
@@ -30,7 +33,7 @@
 					</a>
 					{#if date}
 						<time datetime={date}>
-							{formatDate(new Date(date), '작성')}
+							{formatDate(new Date(date))}
 						</time>
 					{/if}
 				</li>

@@ -1,5 +1,13 @@
+import { AGILE_SOFTWARE, ORIGIN, STARTUP_JOURNEY } from "$lib/constants"
+import { toUrl } from "$lib/utils/url"
+
 export async function get() {
-  const articles = await fetch("https://ohjinsu.me/posts/json").then((res) => res.json())
+  const [a, b] = await Promise.all([
+    fetch(`${ORIGIN}/${toUrl(STARTUP_JOURNEY)}/json`).then((res) => res.json()),
+    fetch(`${ORIGIN}/${toUrl(AGILE_SOFTWARE)}/json`).then((res) => res.json()),
+  ])
+
+  const articles = [...a, ...b]
 
   return {
     headers: {
@@ -16,17 +24,17 @@ export async function get() {
       xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
     >
       <url>
-        <loc>https://ohjinsu.me</loc>
+        <loc>${ORIGIN}</loc>
       </url>
       <url>
-        <loc>https://ohjinsu.me/walking-logs</loc>
+        <loc>${ORIGIN}/${toUrl(STARTUP_JOURNEY)}</loc>
       </url>
       <url>
-        <loc>https://ohjinsu.me/agile-software</loc>
+        <loc>${ORIGIN}/${toUrl(AGILE_SOFTWARE)}</loc>
       </url>
       ${articles.map(({href, date}) => `
         <url>
-          <loc>https://ohjinsu.me/${href}</loc>
+          <loc>${ORIGIN}/${href}</loc>
           ${date ? `<lastmod>${date}</lastmod>` : ""}
         </url>
       `.trim()).join("")}
