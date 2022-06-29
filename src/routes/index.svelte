@@ -2,11 +2,11 @@
 	// @ts-nocheck
 	import Main from '$lib/components/main.svelte';
   import Meta from '$lib/components/meta.svelte';
-  import { AGILE_SOFTWARE, DESCRIPTION, STARTUP_JOURNEY, TITLE } from '$lib/constants';
-import { toUrl } from '$lib/utils/url';
+  import { AGILE_SOFTWARE, DESCRIPTION, ORIGIN, STARTUP_JOURNEY, TITLE } from '$lib/constants';
+  import { toUrl } from '$lib/utils/url';
 </script>
 
-<Meta title="" description="" />
+<Meta title="" description="" canonical={ORIGIN} />
 <Main>
 	<h1>{TITLE}</h1>
 	<p>{DESCRIPTION}</p>
