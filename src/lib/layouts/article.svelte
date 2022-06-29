@@ -3,10 +3,12 @@
 	import Header from '$lib/components/header.svelte';
 	import Main from '$lib/components/main.svelte';
 	import Meta from '$lib/components/meta.svelte';
-	import { ORIGIN } from '$lib/constants';
+	import { ORIGIN, URLS } from '$lib/constants';
 	import { formatDate } from '$lib/utils/date';
 
 	export let title;
+
+	export let slug;
 
 	export let description;
 
@@ -16,7 +18,7 @@
 
 	const dateFormatted = `${formatDate(new Date(date), '작성')}`;
 
-	const canonical=`${ORIGIN}/${category.replace(" ", "-")}/${title.replace(" ", "-")}`
+	const canonical=`${ORIGIN}/${URLS[category]}/${slug}`
 </script>
 
 <Meta {title} {description} {canonical}  />

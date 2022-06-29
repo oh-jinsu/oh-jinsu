@@ -4,7 +4,7 @@
 	import Main from '$lib/components/main.svelte';
 
 	import Meta from '$lib/components/meta.svelte';
-  import { ORIGIN } from '$lib/constants';
+  import { ORIGIN, URLS } from '$lib/constants';
 
 	import { formatDate } from '$lib/utils/date';
 
@@ -14,7 +14,7 @@
 
 	export let articles;
 
-  const canonical = `${ORIGIN}/${title.replace(" ", "-")}`
+  const canonical = `${ORIGIN}/${URLS[title]}`
 </script>
 
 <Meta {title} {description} {canonical}/>
