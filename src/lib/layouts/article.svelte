@@ -1,4 +1,5 @@
 <script>
+	import Breadcrumbs from '$lib/components/breadcrumbs.svelte';
 	import Header from '$lib/components/header.svelte';
 	import Main from '$lib/components/main.svelte';
 	import Meta from '$lib/components/meta.svelte';
@@ -12,23 +13,13 @@
 
 	export let category;
 
-	const categoryHref = {
-		'스타트업 여행기': '/startup-journey',
-		'애자일 소프트웨어': '/agile-software'
-	}[category];
-
 	const dateFormatted = `${formatDate(new Date(date), '작성')}`;
 </script>
 
 <Meta {title} {description} />
 
 <Header>
-	<nav>
-		<a href="/">오진수</a>
-		>
-		<a href={categoryHref}>{category}</a>
-		> {title}
-	</nav>
+	<Breadcrumbs category={category} title={title} />
 </Header>
 <Main>
 	<article>

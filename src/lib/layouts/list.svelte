@@ -1,5 +1,6 @@
 <script>
-	import Header from '$lib/components/header.svelte';
+	import Breadcrumbs from '$lib/components/breadcrumbs.svelte';
+  import Header from '$lib/components/header.svelte';
 	import Main from '$lib/components/main.svelte';
 
 	import Meta from '$lib/components/meta.svelte';
@@ -16,10 +17,7 @@
 <Meta {title} {description} />
 
 <Header>
-	<nav>
-		<a href="/">오진수</a>
-		> {title}
-	</nav>
+	<Breadcrumbs category={title} title="" />
 </Header>
 <Main>
 	<h1>{title}</h1>

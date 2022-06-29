@@ -1,12 +1,15 @@
 <script>
 	// @ts-nocheck
 	import Main from '$lib/components/main.svelte';
-	import Readme from '../../README.md';
+  import Meta from '$lib/components/meta.svelte';
+	
+  const description = "생산성을 중시하는 풀스택 개발자입니다."
 </script>
 
+<Meta title="" description={description} />
 <Main>
 	<h1>오진수</h1>
-	<Readme />
+	<p>{description}</p>
 	<p>
 		실전을 통해서 성장하려고 해요. <a href="/startup-journey">스타트업 여행기</a>를 살펴 보세요.
 	</p>
