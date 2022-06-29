@@ -3,7 +3,7 @@
 	import Header from '$lib/components/header.svelte';
 	import Main from '$lib/components/main.svelte';
 	import Meta from '$lib/components/meta.svelte';
-import { ORIGIN } from '$lib/constants';
+	import { ORIGIN } from '$lib/constants';
 	import { formatDate } from '$lib/utils/date';
 
 	export let title;

@@ -1,12 +1,11 @@
 <script context="module">
-import { AGILE_SOFTWARE, AGILE_SOFTWARE_DESCRIPTION } from "$lib/constants";
+import { AGILE_SOFTWARE, AGILE_SOFTWARE_DESCRIPTION, URLS } from "$lib/constants";
 
 import List from "$lib/layouts/list.svelte";
-import { toUrl } from "$lib/utils/url";
 
   export const prerender = false;
   export const load = async ({ fetch }) => {
-    const res = await fetch(`/${toUrl(AGILE_SOFTWARE)}/json`)
+    const res = await fetch(`/${URLS[AGILE_SOFTWARE]}/json`)
     const articles = await res.json()
     return {
       props: {

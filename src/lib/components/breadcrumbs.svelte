@@ -1,4 +1,7 @@
 <script>
+import { AGILE_SOFTWARE, URLS } from "$lib/constants";
+
+
   export let category
 
   export let title
@@ -9,7 +12,7 @@
   {#if category}
     {#if title}
       &gt;
-      <a href={`/${category.replace(" ", "-")}`}>
+      <a href={`/${URLS[AGILE_SOFTWARE]}`}>
         {category}
       </a>
     {:else}

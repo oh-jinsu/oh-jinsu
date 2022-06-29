@@ -1,6 +1,7 @@
 ---
 layout: article
 category: 애자일 소프트웨어
+slug: advantages-and-disadvantages-of-MVVM-architecture
 title: MVVM 아키텍처의 장단점
 description: 지난 세 차례의 프로젝트에서 나는 MVVM 아키텍처를 구현했다. MVVM은 매력적인 아키텍처다. 구조가 단순하며, 가장 분리되어 있고, 테스트에 최적화되어 있다. 이러한 눈에 띄는 장점들에도 불구하고 직접 구현하면서 느낀 단점들도 많다. 때때로 위의 특성들 자체가 한계를 보여주기도 한다. 우선 문제점을 분명히 인식하고 보다 나은 설계의 단서를 찾아 내기 위해 글을 적는다.
 date: 2022-05-15

@@ -1,10 +1,9 @@
-import { AGILE_SOFTWARE, ORIGIN, STARTUP_JOURNEY } from "$lib/constants"
-import { toUrl } from "$lib/utils/url"
+import { AGILE_SOFTWARE, ORIGIN, STARTUP_JOURNEY, URLS } from "$lib/constants"
 
 export async function get() {
   const [a, b] = await Promise.all([
-    fetch(`${ORIGIN}/${toUrl(STARTUP_JOURNEY)}/json`).then((res) => res.json()),
-    fetch(`${ORIGIN}/${toUrl(AGILE_SOFTWARE)}/json`).then((res) => res.json()),
+    fetch(`${ORIGIN}/${URLS[STARTUP_JOURNEY]}/json`).then((res) => res.json()),
+    fetch(`${ORIGIN}/${URLS[AGILE_SOFTWARE]}/json`).then((res) => res.json()),
   ])
 
   const articles = [...a, ...b]
@@ -27,10 +26,10 @@ export async function get() {
         <loc>${ORIGIN}</loc>
       </url>
       <url>
-        <loc>${ORIGIN}/${toUrl(STARTUP_JOURNEY)}</loc>
+        <loc>${ORIGIN}/${URLS[STARTUP_JOURNEY]}</loc>
       </url>
       <url>
-        <loc>${ORIGIN}/${toUrl(AGILE_SOFTWARE)}</loc>
+        <loc>${ORIGIN}/${URLS[AGILE_SOFTWARE]}</loc>
       </url>
       ${articles.map(({href, date}) => `
         <url>

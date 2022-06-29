@@ -5,4 +5,8 @@ export const AGILE_SOFTWARE = "애자일 소프트웨어"
 export const AGILE_SOFTWARE_DESCRIPTION="비즈니스의 성공을 주도하는 프로그래밍에 대해 생각해요."
 export const STARTUP_JOURNEY = "스타트업 여행기"
 export const STARTUP_JOURNEY_DESCRIPTION = "실전을 통해 성장하려고 해요."
+export const URLS = {
+  "애자일 소프트웨어": "agile-software",
+  "스타트업 여행기": "startup-journey"
+}
 export const ORIGIN="https://ohjinsu.me"
