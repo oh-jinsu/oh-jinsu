@@ -33,10 +33,12 @@
 
 <style>
 	ol {
-    display: flex;
-
     list-style: none;
 
 		margin: 0;
+	}
+
+	li {
+		display: inline;
 	}
 </style>
