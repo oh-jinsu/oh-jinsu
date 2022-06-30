@@ -16,15 +16,17 @@
 
 	export let category;
 
+	export let keywords;
+
 	const dateFormatted = `${formatDate(new Date(date), '작성')}`;
 
-	const canonical=`${ORIGIN}/${URLS[category]}/${slug}`
+	const canonical = `${ORIGIN}/${URLS[category]}/${slug}`;
 </script>
 
-<Meta {title} {description} {canonical}  />
+<Meta {title} {description} {canonical} {keywords} />
 
 <Header>
-	<Breadcrumbs category={category} title={title} />
+	<Breadcrumbs {category} {title} />
 </Header>
 <Main>
 	{#if title}
