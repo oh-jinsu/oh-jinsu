@@ -64,9 +64,18 @@ address {
 blockquote {
   margin: 0;
 
-  padding: .25rem 0 .25rem 1rem;
-  
-  border-left: 4px solid var(--primary-color);
+  padding: .25rem 0 .25rem;
+}
+
+blockquote>p {
+  font-style: italic;
+}
+
+blockquote>p::before {
+  content: "\"";
+}
+blockquote>p::after {
+  content: "\"";
 }
 
 code[class*="language-"],
