@@ -1,7 +1,6 @@
 ---
 layout: article
 category: 애자일 소프트웨어
-slug: how-not-to-use-variables.md
 title: 대입문을 사용하지 않는 프로그래밍
 description: Uncle Bob이 함수형 프로그래밍에 관해서 남긴 유명한 말이 있죠. "Functional programming is programming without assignment statements." 즉 함수형 프로그래밍이란 대입문을 사용하지 않는 프로그래밍이라는 것입니다. 대입문을 사용하지 않는다는 건 무엇을 의미할까요? 그리고 어떻게 가능할까요?
 date: 2022-07-13

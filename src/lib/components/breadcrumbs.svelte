@@ -8,25 +8,21 @@
 
 <nav>
 	<ol>
-		<li>
-			<a href="/">오진수</a>
-		</li>
+		<li><a href="/">오진수</a></li>
 		{#if category}
 			<li>
 				{#if title}
-					&nbsp;&gt;
+					&gt;
 					<a href={`/${URLS[AGILE_SOFTWARE]}`}>
 						{category}
 					</a>
 				{:else}
-        &nbsp;&gt; {category}
+        &gt; {category}
 				{/if}
 			</li>
 		{/if}
 		{#if title}
-			<li>
-				&nbsp;&gt; {title}
-			</li>
+			<li>&gt; {title}</li>
 		{/if}
 	</ol>
 </nav>

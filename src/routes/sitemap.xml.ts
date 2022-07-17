@@ -1,6 +1,8 @@
-import { AGILE_SOFTWARE, ORIGIN, STARTUP_JOURNEY, URLS } from "$lib/constants"
+import { AGILE_SOFTWARE, STARTUP_JOURNEY, URLS } from "$lib/constants"
 
 export async function get() {
+  const ORIGIN = "https://ohjinsu.me"
+  
   const [a, b] = await Promise.all([
     fetch(`${ORIGIN}/${URLS[STARTUP_JOURNEY]}/json`).then((res) => res.json()),
     fetch(`${ORIGIN}/${URLS[AGILE_SOFTWARE]}/json`).then((res) => res.json()),
@@ -24,6 +26,9 @@ export async function get() {
     >
       <url>
         <loc>${ORIGIN}</loc>
+      </url>
+      <url>
+        <loc>${ORIGIN}/why-you-should-hire-me</loc>
       </url>
       <url>
         <loc>${ORIGIN}/${URLS[STARTUP_JOURNEY]}</loc>

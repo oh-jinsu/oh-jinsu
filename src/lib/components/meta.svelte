@@ -1,11 +1,13 @@
 <script>
+  import { page } from '$app/stores';
+
   import { DESCRIPTION, TITLE } from "$lib/constants";
+
+  const url = $page.url;
 
   export let title
 
   export let description
-
-  export let canonical
 
   export let keywords = []
 
@@ -24,5 +26,5 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content={metaTitle} />
   <meta name="twitter:description" content={metaDescription} />
-  <link rel="canonical" href={canonical} />
+  <link rel="canonical" href={url} />
 </svelte:head>

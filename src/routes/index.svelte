@@ -1,23 +1,25 @@
 <script>
-	// @ts-nocheck
 	import Main from '$lib/components/main.svelte';
   import Meta from '$lib/components/meta.svelte';
-  import { AGILE_SOFTWARE, DESCRIPTION, ORIGIN, STARTUP_JOURNEY, TITLE, URLS } from '$lib/constants';
-
-  console.log(URLS[AGILE_SOFTWARE])
+  import { AGILE_SOFTWARE, AGILE_SOFTWARE_DESCRIPTION, DESCRIPTION, STARTUP_JOURNEY, STARTUP_JOURNEY_DESCRIPTION, TITLE, URLS } from '$lib/constants';
 </script>
 
-<Meta title="" description="" canonical={ORIGIN} />
+<Meta title="" description="" />
 <Main>
 	<h1>{TITLE}</h1>
-	<p>{DESCRIPTION}</p>
 	<p>
-		실전을 통해서 성장하려고 해요.
-    <a href={`/${URLS[STARTUP_JOURNEY]}`}>
-      {STARTUP_JOURNEY}</a>를 살펴 보세요.
+		{ DESCRIPTION }
+		<a href="/why-you-should-hire-me">
+			왜 저와 함께 일해야 할까요?
+		</a>
 	</p>
 	<p>
-		비즈니스의 성공을 주도하는 프로그래밍에 관해 생각해요.
+		{ STARTUP_JOURNEY_DESCRIPTION }
+    <a href={`/${URLS[STARTUP_JOURNEY]}`}>
+      {STARTUP_JOURNEY}</a>을 살펴 보세요.
+	</p>
+	<p>
+		{ AGILE_SOFTWARE_DESCRIPTION }
     <a href={`/${URLS[AGILE_SOFTWARE]}`}>
       {AGILE_SOFTWARE}</a>를 살펴 보세요.
 	</p>

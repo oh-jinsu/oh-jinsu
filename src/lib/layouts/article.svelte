@@ -3,12 +3,9 @@
 	import Header from '$lib/components/header.svelte';
 	import Main from '$lib/components/main.svelte';
 	import Meta from '$lib/components/meta.svelte';
-	import { ORIGIN, URLS } from '$lib/constants';
 	import { formatDate } from '$lib/utils/date';
 
 	export let title;
-
-	export let slug;
 
 	export let description;
 
@@ -19,11 +16,9 @@
 	export let keywords;
 
 	const dateFormatted = `${formatDate(new Date(date), '작성')}`;
-
-	const canonical = `${ORIGIN}/${URLS[category]}/${slug}`;
 </script>
 
-<Meta {title} {description} {canonical} {keywords} />
+<Meta {title} {description} {keywords} />
 
 <Header>
 	<Breadcrumbs {category} {title} />
