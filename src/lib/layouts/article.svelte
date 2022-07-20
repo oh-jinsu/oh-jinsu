@@ -23,7 +23,7 @@
 <Header>
 	<Breadcrumbs {category} {title} />
 </Header>
-<Main>
+<main>
 	{#if title}
 		<h1>{title}</h1>
 	{/if}
@@ -31,4 +31,27 @@
 		<time datetime={date}>{dateFormatted}</time>
 	{/if}
 	<slot />
-</Main>
+</main>
+
+<style>
+	main {
+		flex: 1;
+
+		max-width: var(--screen-width);
+		
+		width: 100%;
+	}
+
+	@media (max-width: 576px) {
+		:global(main>*:not(pre)) {
+			margin-left: 16px;
+			margin-right: 16px;
+		}
+	}
+
+	@media (min-width: 577px) {
+		main {
+			padding: 0 16px;
+		}
+	}
+</style>
