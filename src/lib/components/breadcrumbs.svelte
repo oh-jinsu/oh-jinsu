@@ -13,7 +13,7 @@
 			<li>
 				{#if title}
 					&gt;
-					<a href={`/${URLS[AGILE_SOFTWARE]}`}>
+					<a href={`/${URLS[category]}`}>
 						{category}
 					</a>
 				{:else}

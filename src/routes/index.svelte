@@ -23,30 +23,4 @@
     <a href={`/${URLS[AGILE_SOFTWARE]}`}>
       {AGILE_SOFTWARE}</a>를 살펴 보세요.
 	</p>
-	<address>
-		<a class="email" href="mailto:ohjinsu@codersproduct.com"> ohjinsu@codersproduct.com </a>
-		<a class="portfolio" href="https://github.com/oh-jinsu" target="_blank">
-			https://github.com/oh-jinsu
-		</a>
-	</address>
 </Main>
-
-<style>
-	address {
-		display: flex;
-		flex-direction: column;
-		gap: 8px;
-	}
-
-	address > * {
-		width: fit-content;
-	}
-
-	.email::before {
-		content: '📪 ';
-	}
-
-	.portfolio::before {
-		content: '💼 ';
-	}
-</style>

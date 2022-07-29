@@ -5,6 +5,7 @@ title: AWS Lambda로 명시적인 REST API를 작성하는 법
 description:
 date: 2022-07-26
 keywords: [AWS, Lambda, 명시적, REST API, specify-lambda, API 문서]
+image: /images/write-your-explicit-aws-lambda-with-specify-lambda.jpg
 ---
 ## 왜 AWS Lambda인가요?
 [REST API](https://www.redhat.com/ko/topics/api/what-is-a-rest-api) 서버를 구현하는 기술은 다양해요. 하지만 어떤 기술을 사용하든 잘 설계한 REST API 서버는 한 가지 공통점을 가지는데요. 바로 하나의 API를 구성하는 코드가 다른 API를 구성하는 코드와 영향을 최대한 주고받지 않는다는 점이에요. 
