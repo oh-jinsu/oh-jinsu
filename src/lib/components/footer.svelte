@@ -3,8 +3,8 @@
 </script>
 
 <footer>
-  <address>
-    <p>© { year } 오진수.</p>
+  <p>© { year } 오진수.</p>
+	<address>
 		<a class="email" href="mailto:ohjinsu@codersproduct.com"> ohjinsu@codersproduct.com </a>
 		<a class="portfolio" href="https://github.com/oh-jinsu" target="_blank">
 			https://github.com/oh-jinsu
@@ -22,7 +22,7 @@
     
     width: 100%;
 
-    padding: 16px 0;
+		padding-bottom: 16px;
   }
 
   footer>* {

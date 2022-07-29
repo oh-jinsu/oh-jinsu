@@ -2,7 +2,7 @@
 layout: article
 category: 애자일 소프트웨어
 title: AWS Lambda로 명시적인 REST API를 작성하는 법
-description:
+description: specify-lambda 라이브러리를 통해 API 문서를 없애는 깔끔한 방법을 소개합니다.
 date: 2022-07-26
 keywords: [AWS, Lambda, 명시적, REST API, specify-lambda, API 문서]
 ---
