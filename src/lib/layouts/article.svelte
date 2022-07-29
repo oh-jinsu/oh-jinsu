@@ -15,7 +15,7 @@
 
 	export let keywords;
 
-	const dateFormatted = `${formatDate(new Date(date), '작성')}`;
+	const dateFormatted = `${formatDate(new Date(date))}`;
 </script>
 
 <Meta {title} {description} {keywords} />

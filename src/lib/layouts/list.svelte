@@ -21,6 +21,7 @@
 </Header>
 <Main>
 	<h1>{title}</h1>
+	<p>{description}</p>
 	{#if articles.length > 0}
 		<ol>
 			{#each articles as { title, date, href }}
@@ -28,11 +29,8 @@
 					<a {href}>
 						{title}
 					</a>
-					{#if date}
-						<time datetime={date}>
-							{formatDate(new Date(date))}
-						</time>
-					{/if}
+					/
+					{formatDate(new Date(date))}
 				</li>
 			{/each}
 		</ol>
@@ -42,15 +40,15 @@
 </Main>
 
 <style>
-	time {
-		display: block;
-	}
-
 	ol {
 		display: flex;
 
 		flex-direction: column-reverse;
 
 		gap: 8px;
+
+		list-style: none;
+
+		padding: 0;
 	}
 </style>
