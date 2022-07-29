@@ -15,8 +15,6 @@
 
 	export let keywords;
 
-	export let image;
-
 	const dateFormatted = `${formatDate(new Date(date), '작성')}`;
 </script>
 
@@ -36,14 +34,5 @@
 			</p>
 		</time>
 	{/if}
-	{#if image}
-		<img src={image} alt="header" />
-	{/if}
 	<slot />
 </Main>
-
-<style>
-	img {
-		margin: 16px 0;
-	}
-</style>

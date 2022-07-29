@@ -5,7 +5,6 @@ title: 기존의 해결책을 이용하지 않은 진짜 이유
 description: 창업가가 저지르는 일반적인 실수가 여기에 또 있습니다. 기존의 해결책을 존중하지 않는 버릇입니다.
 date: 2022-07-20
 keywords: [아이디어, 창업, 기존의 해결책, 진짜 이유]
-image: /images/the-real-reason-you-do-not-use-existing-solutions.jpg
 ---
 
 창업가가 저지르는 일반적인 실수가 여기에 또 있습니다. 기존의 해결책을 존중하지 않는 버릇입니다.
