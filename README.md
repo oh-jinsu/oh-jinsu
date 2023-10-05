@@ -34,4 +34,4 @@ Bring technological innovation to the interior design service market.
 ### [Sungkyunkwan University](https://www.skku.edu/eng/)
 
 _February 2017 ~ Present_  
-Bachelor's Degree · Korean Linguistic and Literature
+Majoring in Korean Linguistic and Literature
