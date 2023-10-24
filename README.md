@@ -3,10 +3,6 @@ Software engineer aiming to better lives. Loves reading, reflective walks, and a
 email: <a href="mailto:ohjinsu98@icloud.com">ohjinsu98@icloud.com</a>  
 github: <a href="https://github.com/oh-jinsu" target="_blank" rel="noreferrer">https://github.com/oh-jinsu</a>
 
-## Mission
-
-Bring technological innovation to the interior design service market.
-
 ## Work Experience
 
 ### Software Engineer
