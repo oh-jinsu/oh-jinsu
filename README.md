@@ -10,7 +10,7 @@ github: <a href="https://github.com/oh-jinsu" target="_blank" rel="noreferrer">h
 <i>[Bluevation, Geumcheon-gu, Seoul](https://bluevation.com) - (August 2023 ~ Present)</i>
 
 -   Designed the service architecture of 3D interior design consulting SaaS.
--   Successfully completed maintenance on 10+ PHP-based e-commerce solutions, including feature updates.
+-   Implemented the algorithm to generate floor plans
 
 ### Fullstack Developer
 
