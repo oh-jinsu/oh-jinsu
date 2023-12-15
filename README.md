@@ -25,9 +25,34 @@ github: <a href="https://github.com/oh-jinsu" target="_blank" rel="noreferrer">h
 
 -   Developed a Flutter app for an AI-based fairy tale creation assistant and deployed it to both iOS and Android.
 
-## Education
+## Personal Experience
 
-### [Sungkyunkwan University](https://www.skku.edu/eng/)
+### Frontend Developer
 
-_February 2017 ~ Present_  
-Majoring in Korean Linguistic and Literature
+<i>Personal Shopper, Gangnam-gu, Seoul - (April 2021 ~ August 2022)</i>
+
+- Developed the front-end of a web service that matches fashion stylists for entrepreneurial purposes with students from other universities.
+
+### Frontend Developer
+
+<i>Bogobogo, Jongno-gu, Seoul - (February 2021 ~ August 2022)</i>
+
+- Developed a theatre and musical community app with Flutter, supported by Sungkyunkwan University's Entrepreneurship Support Group.
+
+### Client Programmer
+
+<i>Flight of the Bumblebee, Jongno-gu, Seoul - (October 2020 ~ January 2021)</i>
+
+- Remade a bullet shooter game I developed in middle school with an illustrator and backend developer friends for publishing to Google Play Store.
+
+### Administrative Officer
+
+<i>KATUSA, Pyeongtaek - (February 2019 ~ October 2020)</i>
+
+- Assisted U.S. military personnel deploying to South Korea.
+
+### University Student
+
+<i>Sungkyunkwan University, Jongno-gu - (February 2017 ~ Present)</i>
+
+- Majored in Korean Linguistic and Literature. Had a strong interest in Nietzsche, Baudrillard, Deleuze, and Rancière.
