@@ -29,7 +29,7 @@ github: <a href="https://github.com/oh-jinsu" target="_blank" rel="noreferrer">h
 
 ### Frontend Developer
 
-<i>Personal Shopper, Gangnam-gu, Seoul - (April 2021 ~ August 2022)</i>
+<i>Personal Shopper, Gangnam-gu, Seoul - (April 2021 ~ August 2022)</i>
 
 - Developed the front-end of a web service that matches fashion stylists for entrepreneurial purposes with students from other universities.
 
@@ -39,13 +39,13 @@ github: <a href="https://github.com/oh-jinsu" target="_blank" rel="noreferrer">h
 
 - Developed a theatre and musical community app with Flutter, supported by Sungkyunkwan University's Entrepreneurship Support Group.
 
-### Client Programmer
+### Client Programmer
 
 <i>Flight of the Bumblebee, Jongno-gu, Seoul - (October 2020 ~ January 2021)</i>
 
 - Remade a bullet shooter game I developed in middle school with an illustrator and backend developer friends for publishing to Google Play Store.
 
-### Administrative Officer
+### Administrative Officer
 
 <i>KATUSA, Pyeongtaek - (February 2019 ~ October 2020)</i>
 
@@ -55,4 +55,4 @@ github: <a href="https://github.com/oh-jinsu" target="_blank" rel="noreferrer">h
 
 <i>Sungkyunkwan University, Jongno-gu - (February 2017 ~ Present)</i>
 
-- Majored in Korean Linguistic and Literature. Had a strong interest in Nietzsche, Baudrillard, Deleuze, and Rancière.
+- Majored in Korean Linguistic and Literature.
