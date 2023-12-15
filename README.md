@@ -56,3 +56,4 @@ github: <a href="https://github.com/oh-jinsu" target="_blank" rel="noreferrer">h
 <i>[Sungkyunkwan University](https://www.skku.edu/skku/index.do), Jongno-gu - (February 2017 ~ Present)</i>
 
 - Majored in Korean Linguistic and Literature.
+- Selected as a Student Success Creative Scholar for the first semester of 2021.
