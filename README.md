@@ -45,7 +45,7 @@ github: <a href="https://github.com/oh-jinsu" target="_blank" rel="noreferrer">h
 
 - Remade a bullet shooter game I developed in middle school with an illustrator and backend developer friends for publishing to Google Play Store.
 
-### Human Resources Specialist
+### HR Specialist
 
 <i>[KATUSA](https://8tharmy.korea.army.mil/site/about/katusa-soldier-program.asp), Pyeongtaek - (February 2019 ~ October 2020)</i>
 
