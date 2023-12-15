@@ -29,7 +29,7 @@ github: <a href="https://github.com/oh-jinsu" target="_blank" rel="noreferrer">h
 
 ### Frontend Developer
 
-<i>[Bogobogo](https://play.google.com/store/apps/details?id=com.curiouser.bogobogo&hl=ko&gl=US), Jongno-gu, Seoul - (February 2021 ~ January 2022)</i>
+<i>[Bogobogo](https://play.google.com/store/apps/details?id=com.curiouser.bogobogo&hl=ko&gl=US), Jongno-gu, Seoul - (February 2021 ~ January 2022)</i>
 
 - Developed a theatre and musical community app with Flutter, supported by Sungkyunkwan University's Entrepreneurship Support Group.
 
