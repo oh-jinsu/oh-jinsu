@@ -29,15 +29,15 @@ github: <a href="https://github.com/oh-jinsu" target="_blank" rel="noreferrer">h
 
 ### Frontend Developer
 
-<i>Personal Shopper, Gangnam-gu, Seoul - (April 2021 ~ August 2022)</i>
+<i>[Bogobogo](https://play.google.com/store/apps/details?id=com.curiouser.bogobogo&hl=ko&gl=US), Jongno-gu, Seoul - (February 2021 ~ January 2022)</i>
 
-- Developed the front-end of a web service that matches fashion stylists for entrepreneurial purposes with students from other universities.
+- Developed a theatre and musical community app with Flutter, supported by Sungkyunkwan University's Entrepreneurship Support Group.
 
 ### Frontend Developer
 
-<i>Bogobogo, Jongno-gu, Seoul - (February 2021 ~ August 2022)</i>
+<i>[Personal Shopper](http://personalshoppers.com/), Gangnam-gu, Seoul - (April 2021 ~ August 2021)</i>
 
-- Developed a theatre and musical community app with Flutter, supported by Sungkyunkwan University's Entrepreneurship Support Group.
+- Developed the front-end of a web service that matches fashion stylists for entrepreneurial purposes with students from other universities.
 
 ### Client Programmer
 
@@ -47,12 +47,12 @@ github: <a href="https://github.com/oh-jinsu" target="_blank" rel="noreferrer">h
 
 ### Administrative Officer
 
-<i>KATUSA, Pyeongtaek - (February 2019 ~ October 2020)</i>
+<i>[KATUSA](https://8tharmy.korea.army.mil/site/about/katusa-soldier-program.asp), Pyeongtaek - (February 2019 ~ October 2020)</i>
 
 - Assisted U.S. military personnel deploying to South Korea.
 
 ### University Student
 
-<i>Sungkyunkwan University, Jongno-gu - (February 2017 ~ Present)</i>
+<i>[Sungkyunkwan University](https://www.skku.edu/skku/index.do), Jongno-gu - (February 2017 ~ Present)</i>
 
 - Majored in Korean Linguistic and Literature.
