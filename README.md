@@ -1,8 +1,5 @@
 Software engineer aiming to better lives. Loves reading, reflective walks, and a good latte. Valuing sincerity. Always exploring, always learning.
 
-email: <a href="mailto:ohjinsu98@icloud.com">ohjinsu98@icloud.com</a>  
-github: <a href="https://github.com/oh-jinsu" target="_blank" rel="noreferrer">https://github.com/oh-jinsu</a>
-
 ## Work Experience
 
 ### Software Engineer
