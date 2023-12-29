@@ -1,4 +1,4 @@
-Software engineer aiming to better lives. Loves reading, reflective walks, and a good latte. Valuing sincerity. Always exploring, always learning.
+Software engineer. Trying to standardize the interior design industry. Want to build a game engine for screenwriters. Loves reading, reflective walks, and a good latte. Valuing sincerity. Always exploring, always learning.
 
 ## Work Experience
 
