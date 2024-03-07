@@ -1,4 +1,4 @@
-Hi! I'm Jinsu. I develop web, Android/iOS applications, and video games.
+Hi! I'm Jinsu. I develop websites, Android/iOS apps, and video games.
 
 - 💪 I'm self-motivated.
 - 💡 A problem solver.
