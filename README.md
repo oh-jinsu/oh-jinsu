@@ -6,5 +6,5 @@ I'm interested in
 - Humanoids & Autonomous Driving
 - Startups & Organizational Culture
 
-Feel free to reach out for collaboration, discussions, or just to connect!
+Feel free to reach out for collaboration, discussions, or just to connect!  
 Email: [ohjinsu98@icloud.com](mailto://ohjinsu98@icloud.com)
