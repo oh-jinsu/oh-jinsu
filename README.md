@@ -1,5 +1,7 @@
-I am a software engineer with 4 years of experience working in startups.
+Software developer at [Goodvation](https://github.com/goodvation-dev). Running [Makernote](https://makernote.me) and developing Project CH.
 
-I specialize in developing websites, mobile apps, and other softwares essential for startups.
-
-Feel free to explore my repositories and connect with me!
+I'm interested in
+- Games & Game Engines
+- 3D Model & Animation Generation
+- Humanoids & Autonomous Driving
+- Startups & Organizational Culture
