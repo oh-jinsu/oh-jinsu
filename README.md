@@ -6,7 +6,7 @@ My focus is on using web technologies like React, HTML5 Canvas API, Node.js, and
 
 **🧩 Highlights**
 
-- Led company website redesign → monthly visitors 400 → 2,000, 2× higher conversion rate
+- Led company website redesign → monthly visitors 400 → 2,000, 2x higher conversion rate
 - Built an interior design SaaS → reduced design time 8h → 1h
 - Established KPI tracking + internal back office → enabled data-driven culture and funding success
 
